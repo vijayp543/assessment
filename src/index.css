@@ -1,0 +1,109 @@
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,97,9,1) 35%, rgba(0,212,255,1) 100%); 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.assessment-container{
+  width: 800px;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 50px;
+  padding: 70px 90px;
+  box-sizing: border-box;
+
+}
+.active-question-no{
+  font-size: 32px;
+  font-weight: 500;
+  color: grey;
+
+}
+.total-question{
+  font-size: 16px;
+  font-weight: 500;
+  color: green;
+}
+h2{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+ul{
+  margin-top: 20px;
+  margin-left: -40px;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 16px;
+  padding: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.selected-answer{
+  background-color: rgb(89, 75, 179);
+  border: 1px solid burlywood;
+  color: black;
+  
+}
+.footer{
+  display: flex;
+  justify-content: flex-end;
+  
+  /* margin: 13px; */
+}
+button{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,97,9,1) 35%, rgba(0,212,255,1) 100%); 
+  padding: 10px 30px;
+  border-radius: 9px;
+  cursor: pointer;
+  color: black;
+  margin-top: 30px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  margin-right: 20px;
+
+
+}
+
+button:disabled{
+  background-color: white ;
+  cursor: not-allowed;
+  color: white;
+
+}
+.result{
+  text-align: center;
+}
+h2{
+  font-size: 24px;
+  text-align: center;
+  color: black;
+}
+p{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+
+.feedback {
+  font-size: 18px;
+  margin-top: 10px;
+  color: green; /* Color for correct answer */
+}
+
+.feedback span {
+  color: red; /* Color for incorrect answer */
+}

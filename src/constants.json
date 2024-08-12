@@ -1,0 +1,121 @@
+{
+  "jsQuizz": {
+    "questions": [
+      {
+        "question": "Which of the following is a fully managed NoSQL database service provided by AWS?",
+        "choices": [
+          "Amazon RDS",
+          "Amazon DynamoDB",
+          "Amazon Redshift",
+          "Amazon Aurora"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Amazon DynamoDB"
+      },
+      {
+        "question": "What is the primary purpose of Amazon S3?",
+        "choices": [
+          "Compute capacity",
+          "Relational database service",
+          "Object storage service",
+          "Content delivery network"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Object storage service"
+      },
+      {
+        "question": "Which AWS service is used for deploying and managing infrastructure as code?",
+        "choices": [
+          "AWS Lambda",
+          "AWS CloudFormation",
+          "Amazon EC2",
+          "Amazon VPC"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "AWS CloudFormation"
+      },
+      {
+        "question": "What is Amazon CloudFront primarily used for?",
+        "choices": [
+          "Web hosting",
+          "Content delivery network (CDN)",
+          "Virtual private cloud (VPC)",
+          "Database management"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Content delivery network (CDN)"
+      },
+      {
+        "question": "Which of the following services allows you to run code without provisioning or managing servers?",
+        "choices": [
+          "AWS Lambda",
+          "Amazon EC2",
+          "AWS Elastic Beanstalk",
+          "Amazon RDS"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "AWS Lambda"
+      },
+      {
+        "question": "What service does AWS offer for managing permissions and access to AWS resources?",
+        "choices": [
+          "AWS IAM (Identity and Access Management)",
+          "Amazon CloudWatch",
+          "AWS Config",
+          "Amazon GuardDuty"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "AWS IAM (Identity and Access Management)"
+      },
+      {
+        "question": "Which AWS service is used for monitoring and logging your AWS resources?",
+        "choices": [
+          "AWS IAM",
+          "Amazon CloudWatch",
+          "Amazon EC2",
+          "Amazon VPC"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Amazon CloudWatch"
+      },
+      {
+        "question": "Which AWS service is best suited for storing and retrieving any amount of data at any time, from anywhere on the web?",
+        "choices": [
+          "Amazon EC2",
+          "Amazon Glacier",
+          "Amazon S3",
+          "AWS CloudTrail"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Amazon S3"
+      },
+      {
+        "question": "What does AWS Route 53 provide?",
+        "choices": [
+          "DNS service",
+          "Monitoring service",
+          "Compute service",
+          "Storage service"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "DNS service"
+      },
+      {
+        "question": "Which AWS service is used for building, deploying, and running applications using containers?",
+        "choices": [
+          "Amazon ECS (Elastic Container Service)",
+          "Amazon RDS",
+          "AWS CloudFormation",
+          "Amazon S3"
+        ],
+        "type": "MCQs",
+        "correctAnswer": "Amazon ECS (Elastic Container Service)"
+      }
+    ]
+  },
+  "resultInitalState": {
+    "score": 0,
+    "correctAnswers": 0,
+    "wrongAnswers": 0
+  }
+}
