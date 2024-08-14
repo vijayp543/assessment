@@ -9,7 +9,6 @@ const Assessment = ({ questions }) => {
     const [reviewedQuestions, setReviewedQuestions] = useState(
         questions.map(() => false)
     );
-    const [feedbackVisible, setFeedbackVisible] = useState(false); // New state for feedback visibility
 
     const { question, choices, correctAnswer } = questions[currentQuestion];
 
@@ -25,13 +24,12 @@ const Assessment = ({ questions }) => {
             updatedResults[currentQuestion] = isCorrect;
             return updatedResults;
         });
-        setFeedbackVisible(true); // Show feedback after selecting an answer
+
     };
 
     const onClickNext = () => {
         if (currentQuestion < questions.length - 1) {
             setCurrentQuestion((prev) => prev + 1);
-            setFeedbackVisible(false); // Reset feedback visibility for the next question
         } else {
             setShowResult(true);
         }
@@ -40,7 +38,6 @@ const Assessment = ({ questions }) => {
     const onClickPrevious = () => {
         if (currentQuestion > 0) {
             setCurrentQuestion((prev) => prev - 1);
-            setFeedbackVisible(false); // Reset feedback visibility for the previous question
         }
     };
 
@@ -71,28 +68,22 @@ const Assessment = ({ questions }) => {
                                 className={answerInd[currentQuestion] === index ? "selected-answer" : null}
                             >
                                 {answer}
-                                {results[currentQuestion] !== null && answerInd[currentQuestion] === index && (
-                                    <span>
-                                        {results[currentQuestion] === true ? "   ✔ " : " ❌"}
-                                    </span>
-                                )}
+
                             </li>
                         ))}
                     </ul>
-                    {feedbackVisible && (
-                        <div className="feedback">
-                            {results[currentQuestion] === true ? "Correct! ✔ " : "Wrong! ❌"}
-                        </div>
-                    )}
-                    
+
+
                     <div className="footer">
-                    <button onClick={toggleReviewQuestion} className="star-button">
-                        {reviewedQuestions[currentQuestion] ? "⭐" : "☆"} Review
-                    </button>
+                        <button onClick={toggleReviewQuestion} className="star-button">
+                            {reviewedQuestions[currentQuestion] ? "⭐" : "☆"} Review
+                        </button>
                         <button onClick={onClickPrevious} disabled={currentQuestion === 0}>
                             Previous
                         </button>
-                        <button onClick={onClickNext} disabled={answerInd[currentQuestion] === null}>
+                        <button onClick={onClickNext}  >
+                            {/* disabled={answerInd[currentQuestion] === null} */}
+
                             {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
                         </button>
                     </div>
@@ -116,3 +107,13 @@ const Assessment = ({ questions }) => {
 };
 
 export default Assessment;
+
+
+
+
+
+
+
+
+
+
