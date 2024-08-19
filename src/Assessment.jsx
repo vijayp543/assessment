@@ -48,6 +48,11 @@ const Assessment = ({ questions }) => {
             return updatedReviews;
         });
     };
+    const onTryAgain = () => {
+        setResult(resultInitalState);
+        setShowResult(false);
+        setCurrentQuestion(0);
+      };
 
     const totalScore = results.filter(Boolean).length;
     const correctAnswers = results.filter((result) => result === true).length;
@@ -85,6 +90,7 @@ const Assessment = ({ questions }) => {
                             {/* disabled={answerInd[currentQuestion] === null} */}
 
                             {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
+                           
                         </button>
                     </div>
                 </>
@@ -95,6 +101,9 @@ const Assessment = ({ questions }) => {
                     <p>Correct Answers: {correctAnswers}</p>
                     <p>Wrong Answers: {wrongAnswers}</p>
                     <h3>Review Questions:</h3>
+                    <button onClick={onTryAgain}>Try again</button>
+                    
+
                     <ul>
                         {questions.map((q, index) => (
                             reviewedQuestions[index] && <li key={index}>{q.question}</li>
